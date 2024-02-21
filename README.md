@@ -1,8 +1,9 @@
-# React + Vite
+# React Lesson
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React - A Javascript library for building User Interfaces.
 
-Currently, two official plugins are available:
+## Important Tips
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Built, developed and maintained by Facebook(Meta).
+2. Released in 2013.
+3. It is a component based Javascript library.
