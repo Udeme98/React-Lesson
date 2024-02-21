@@ -1,9 +1,9 @@
-import Intro from "./Intro";
+import FirstComp from "./Lessons/FirstComp";
 
 const App = () => {
   return (
     <>
-      <Intro />
+      <FirstComp />
     </>
   );
 };
