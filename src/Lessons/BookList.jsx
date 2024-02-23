@@ -5,12 +5,12 @@ const BookList = () => {
       alt="novel"
     />
   );
-  const Title = () => <h3>The Women: A Novel</h3>;
-  const Author = () => <h4>By: Kristin Hannah</h4>;
+  const Title = () => <h2>The Women</h2>;
+  const Author = () => <h4>Kristin Hannah</h4>;
 
   const Book = () => {
     return (
-      <article>
+      <article className="book">
         <Image />
         <Title />
         <Author />
@@ -19,7 +19,10 @@ const BookList = () => {
   };
 
   return (
-    <section>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
       <Book />
     </section>
   );
