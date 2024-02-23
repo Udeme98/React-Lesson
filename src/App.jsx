@@ -1,9 +1,9 @@
-import NestComp from "./Lessons/NestComp";
+import BookList from "./Lessons/BookList";
 
 const App = () => {
   return (
     <>
-      <NestComp />
+      <BookList />
     </>
   );
 };
