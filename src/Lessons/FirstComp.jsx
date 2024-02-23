@@ -29,6 +29,11 @@ const FirstComp = () => {
       <h2>JSX Rules</h2>
       <ul>
         <li>Return single element(One parent element).</li>
+        <li>Use Semantic section/article instead of div.</li>
+        <li>Use Fragments.</li>
+        <li>camelCase property naming convention.</li>
+        <li>'className' instead of 'class'.</li>
+        <li>close every element.</li>
       </ul>
     </>
   );
