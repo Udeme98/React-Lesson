@@ -14,16 +14,21 @@ const FirstComp = () => {
       <h2>Component</h2>
       <p>
         Components are independent chunks of User Interafaces. Components helps
-        make our codes 'Reusable'
+        make our codes 'Reusable'.
       </p>
       <p>
         Components are usually created with functions, either declarative or an
         arrow function.
       </p>
       <ul>
-        <li>React components starts with a capital letter</li>
-        <li>React components must return JSX</li>
+        <li>React components starts with a capital letter.</li>
+        <li>React components must return JSX.</li>
         <li>React components must have a closing tag.</li>
+      </ul>
+
+      <h2>JSX Rules</h2>
+      <ul>
+        <li>Return single element(One parent element).</li>
       </ul>
     </>
   );
