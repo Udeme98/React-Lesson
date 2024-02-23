@@ -1,9 +1,9 @@
-import FirstComp from "./Lessons/FirstComp";
+import NestComp from "./Lessons/NestComp";
 
 const App = () => {
   return (
     <>
-      <FirstComp />
+      <NestComp />
     </>
   );
 };
