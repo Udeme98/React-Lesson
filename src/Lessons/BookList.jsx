@@ -1,5 +1,7 @@
 const BookList = () => {
-  const Image = () => <img src="../assets/react.svg" alt="novel" />;
+  const Image = () => (
+    <img src="../../public/images/amazon-best.jpg" alt="novel" />
+  );
   const Title = () => <h2>The Women</h2>;
   const Author = () => <h4>Kristin Hannah</h4>;
 

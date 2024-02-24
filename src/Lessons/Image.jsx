@@ -1,4 +1,4 @@
 const Image = () => {
-  return <div>Image</div>;
+  return <img src="./images/amazon-best.jpg" alt="Novel" />;
 };
 export default Image;
