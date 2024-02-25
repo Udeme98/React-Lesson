@@ -10,7 +10,6 @@ const BookList = () => {
       <article className="book">
         <Image />
         <Title />
-
         <Author />
       </article>
     );
