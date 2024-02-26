@@ -1,17 +1,13 @@
-// Topics
-// * Adding CSS to a project
-// * Images in React
-// * JSX - CSS
-// * JSX - JavaScript
-
+const title = "The Woman";
+const author = "Kristin Hannah";
+const img = "../../public/images/amazon-best.jpg";
 const BookList = () => {
   const Book = () => {
-    const title = "The Woman";
     return (
       <article className="book">
-        <img src="../../public/images/amazon-best.jpg" alt="novel" />
+        <img src={img} alt="novel" />
         <h2>{title}</h2>
-        <h4>Kristin Hannah</h4>
+        <h4>{author}</h4>
       </article>
     );
   };

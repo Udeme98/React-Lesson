@@ -1,9 +1,9 @@
-import BookList from "./Lessons/BookList";
+import Props from "./Lessons/Props";
 
 const App = () => {
   return (
     <>
-      <BookList />
+      <Props />
     </>
   );
 };
