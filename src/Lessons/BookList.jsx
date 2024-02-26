@@ -1,9 +1,10 @@
 const BookList = () => {
   const Book = () => {
+    const title = "The Woman";
     return (
       <article className="book">
         <img src="../../public/images/amazon-best.jpg" alt="novel" />
-        <h2>The Women</h2>
+        <h2>{title}</h2>
         <h4>Kristin Hannah</h4>
       </article>
     );
