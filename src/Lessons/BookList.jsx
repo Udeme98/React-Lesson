@@ -3,7 +3,11 @@ const BookList = () => {
     <img src="../../public/images/amazon-best.jpg" alt="novel" />
   );
   const Title = () => <h2>The Women</h2>;
-  const Author = () => <h4>Kristin Hannah</h4>;
+  const Author = () => (
+    <h4 style={{ color: "#617d98", fontSize: "0.8rem", marginTop: "0.5rem" }}>
+      Kristin Hannah
+    </h4>
+  );
 
   const Book = () => {
     return (
