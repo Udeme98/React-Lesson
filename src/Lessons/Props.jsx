@@ -22,11 +22,14 @@ const Book = ({ img, title, author, children }) => {
   );
 };
 
-const names = ["john", "james", "joe"];
-const theNames = names.map((name) => {
-  return <p>{name}</p>;
-});
 const BookList = () => {
-  return <section className="booklist">{theNames}</section>;
+  return (
+    <section className="booklist">
+      {books.map((book) => {
+        const { img, author, title } = book;
+        return <Book img={img} author={author} title={title} />;
+      })}
+    </section>
+  );
 };
 export default BookList;
