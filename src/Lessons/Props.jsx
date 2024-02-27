@@ -1,14 +1,15 @@
-const firstBook = {
-  title: "The Woman",
-  author: "Kristin Hannah",
-  img: "images/amazon-best.jpg",
-};
-
-const secondBook = {
-  title: "Atomic Habit",
-  author: "James Clear",
-  img: "images/atomic-habits.png",
-};
+const books = [
+  {
+    title: "The Woman",
+    author: "Kristin Hannah",
+    img: "images/amazon-best.jpg",
+  },
+  {
+    title: "Atomic Habit",
+    author: "James Clear",
+    img: "images/atomic-habits.png",
+  },
+];
 
 const Book = ({ img, title, author, children }) => {
   return (
@@ -21,22 +22,11 @@ const Book = ({ img, title, author, children }) => {
   );
 };
 
+const names = ["john", "james", "joe"];
+const theNames = names.map((name) => {
+  return <p>{name}</p>;
+});
 const BookList = () => {
-  return (
-    <section className="booklist">
-      <Book
-        title={firstBook.title}
-        author={firstBook.author}
-        img={firstBook.img}
-      >
-        <p>The children props are using found between Component tags</p>
-      </Book>
-      <Book
-        title={secondBook.title}
-        author={secondBook.author}
-        img={secondBook.img}
-      />
-    </section>
-  );
+  return <section className="booklist">{theNames}</section>;
 };
 export default BookList;
