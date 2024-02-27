@@ -10,12 +10,13 @@ const secondBook = {
   img: "images/atomic-habits.png",
 };
 
-const Book = ({ img, title, author }) => {
+const Book = ({ img, title, author, children }) => {
   return (
     <article className="book">
       <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
+      {children}
     </article>
   );
 };
@@ -27,7 +28,9 @@ const BookList = () => {
         title={firstBook.title}
         author={firstBook.author}
         img={firstBook.img}
-      />
+      >
+        <p>The children props are using found between Component tags</p>
+      </Book>
       <Book
         title={secondBook.title}
         author={secondBook.author}
