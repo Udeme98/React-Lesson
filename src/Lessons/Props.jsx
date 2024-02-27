@@ -3,11 +3,13 @@ const books = [
     title: "The Woman",
     author: "Kristin Hannah",
     img: "images/amazon-best.jpg",
+    id: 1,
   },
   {
     title: "Atomic Habit",
     author: "James Clear",
     img: "images/atomic-habits.png",
+    id: 2,
   },
 ];
 
@@ -26,8 +28,8 @@ const BookList = () => {
   return (
     <section className="booklist">
       {books.map((book) => {
-        const { img, author, title } = book;
-        return <Book img={img} author={author} title={title} />;
+        const { img, author, title, id } = book;
+        return <Book img={img} author={author} title={title} key={id} />;
       })}
     </section>
   );
