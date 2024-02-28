@@ -1,9 +1,9 @@
-import Props from "./Lessons/Props";
+import Events from "./Lessons/Events";
 
 const App = () => {
   return (
     <>
-      <Props />
+      <Events />
     </>
   );
 };
