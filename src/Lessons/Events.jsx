@@ -1,39 +1,23 @@
-const books = [
-  {
-    id: 1,
-    title: "The Woman",
-    author: "Kristin Hannah",
-    img: "images/amazon-best.jpg",
-  },
-  {
-    id: 2,
-    title: "Atomic Habit",
-    author: "James Clear",
-    img: "images/atomic-habits.png",
-  },
-];
-
-const Book = ({ img, title, author }) => {
-  return (
-    <article className="book">
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <h4>{author}</h4>
-    </article>
-  );
-};
-
 const EventExamples = () => {
-  const handleFormInput = () => {
+  const handleFormInput = (e) => {
+    console.log(e.target);
+    console.log(e.target.name);
+    console.log(e.target.value);
     console.log("handle form input");
   };
+
   const handleButtonClick = () => {
     console.log("handle button click");
   };
 
+  const handleFormSubmission = (e) => {
+    e.preventDefault();
+    console.log("form submitted");
+  };
+
   return (
     <section>
-      <form>
+      <form onSubmit={handleFormSubmission}>
         <h2>Typical Form</h2>
         <input
           type="text"
@@ -51,9 +35,6 @@ const BookList = () => {
   return (
     <section className="booklist">
       <EventExamples />
-      {books.map((book) => {
-        return <Book {...book} key={book.id} />;
-      })}
     </section>
   );
 };
