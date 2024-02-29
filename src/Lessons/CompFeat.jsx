@@ -1,3 +1,7 @@
+// Topics
+// * Component Feature
+// * Prop drilling
+
 const books = [
   {
     id: 1,
