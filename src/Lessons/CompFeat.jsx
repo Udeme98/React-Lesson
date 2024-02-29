@@ -14,10 +14,19 @@ const books = [
 ];
 
 const Book = ({ img, title, author }) => {
+  const displayTitle = () => {
+    console.log(title);
+  };
   return (
     <article className="book">
       <img src={img} alt={title} />
       <h2>{title}</h2>
+      <button
+        onClick={displayTitle}
+        style={{ padding: "4px 8px", borderRadius: "5px" }}
+      >
+        Display Title
+      </button>
       <h4>{author}</h4>
     </article>
   );
