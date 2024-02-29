@@ -1,9 +1,9 @@
-import Events from "./Lessons/Events";
+import CompFeat from "./Lessons/CompFeat";
 
 const App = () => {
   return (
     <>
-      <Events />
+      <CompFeat />
     </>
   );
 };
