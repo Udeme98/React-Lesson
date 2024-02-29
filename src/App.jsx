@@ -1,9 +1,9 @@
-import CompFeat from "./Lessons/CompFeat";
+import CompExp from "./Lessons/CompExp";
 
 const App = () => {
   return (
     <>
-      <CompFeat />
+      <CompExp />
     </>
   );
 };
