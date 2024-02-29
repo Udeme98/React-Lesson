@@ -13,19 +13,16 @@ const books = [
   },
 ];
 
-const Book = ({ img, title, author }) => {
-  const displayTitle = () => {
-    console.log(title);
-  };
+const Book = ({ img, title, author, displayValue }) => {
   return (
     <article className="book">
       <img src={img} alt={title} />
       <h2>{title}</h2>
       <button
-        onClick={displayTitle}
+        onClick={displayValue}
         style={{ padding: "4px 8px", borderRadius: "5px" }}
       >
-        Display Title
+        Click Me
       </button>
       <h4>{author}</h4>
     </article>
@@ -33,10 +30,14 @@ const Book = ({ img, title, author }) => {
 };
 
 const BookList = () => {
+  const someValue = "shakeAndBake";
+  const displayValue = () => {
+    console.log(someValue);
+  };
   return (
     <section className="booklist">
       {books.map((book) => {
-        return <Book {...book} key={book.id} />;
+        return <Book {...book} key={book.id} displayValue={displayValue} />;
       })}
     </section>
   );
