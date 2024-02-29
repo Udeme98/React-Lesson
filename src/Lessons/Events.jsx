@@ -1,3 +1,9 @@
+// Topics
+// * Events Basic
+// * Forms
+// * Form Gotcha
+// * Arrow Function
+
 const EventExamples = () => {
   const handleFormSubmission = (e) => {
     e.preventDefault();
