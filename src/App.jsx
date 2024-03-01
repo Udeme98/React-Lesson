@@ -1,9 +1,9 @@
-import BookList from "./Lessons/Es6 Modules/Book";
+import NumClgs from "./Challenges/NumClgs";
 
 const App = () => {
   return (
     <>
-      <BookList />
+      <NumClgs />
     </>
   );
 };
