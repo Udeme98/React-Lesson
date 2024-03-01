@@ -1,20 +1,11 @@
 import { books } from "./books";
-
-const Book = ({ img, title, author }) => {
-  return (
-    <article className="book">
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <h4>{author}</h4>
-    </article>
-  );
-};
+import BookCard from "./BookCard";
 
 const BookList = () => {
   return (
     <section className="booklist">
       {books.map((book) => {
-        return <Book {...book} key={book.id} />;
+        return <BookCard {...book} key={book.id} />;
       })}
     </section>
   );
