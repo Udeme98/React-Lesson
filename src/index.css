@@ -57,3 +57,7 @@ body {
   background-color: #c35600;
   color: #fff;
 }
+.book-heading {
+  text-align: center;
+  margin-top: 4rem;
+}

@@ -1,9 +1,9 @@
-import NumClgs from "./Challenges/NumClgs";
+import TitleClgs from "./Challenges/TitleClgs";
 
 const App = () => {
   return (
     <>
-      <NumClgs />
+      <TitleClgs />
     </>
   );
 };
