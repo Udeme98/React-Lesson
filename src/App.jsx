@@ -1,9 +1,9 @@
-import CompExp from "./Lessons/CompExp";
+import BookList from "./Lessons/Es6 Modules/Book";
 
 const App = () => {
   return (
     <>
-      <CompExp />
+      <BookList />
     </>
   );
 };
