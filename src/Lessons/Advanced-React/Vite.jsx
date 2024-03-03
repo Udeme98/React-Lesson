@@ -2,6 +2,11 @@ const Vite = () => {
   return (
     <>
       <h1>Vite - Info and Setup</h1>
+      <p>Much faster than CRA.</p>
+      <p>
+        Provides tons of great features, thereby we get a better experience.
+      </p>
+
       <h3>Vite Docs</h3>
       <pre>https://vitejs.dev</pre>
 
