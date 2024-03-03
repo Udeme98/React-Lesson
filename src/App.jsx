@@ -1,9 +1,9 @@
-import TitleClgs from "./Challenges/TitleClgs";
+import Vite from "./Lessons/Advanced-React/Vite";
 
 const App = () => {
   return (
     <>
-      <TitleClgs />
+      <Vite />
     </>
   );
 };
