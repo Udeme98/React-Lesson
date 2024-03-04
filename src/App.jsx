@@ -1,9 +1,9 @@
-import ErrExample from "./Lessons/Advanced-React/useState/ErrExample";
+import UseStateIntro from "./Lessons/Advanced-React/useState/useStateIntro";
 
 const App = () => {
   return (
     <div className="container">
-      <ErrExample />
+      <UseStateIntro />
     </div>
   );
 };
