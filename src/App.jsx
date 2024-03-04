@@ -1,9 +1,9 @@
-import Vite from "./Lessons/Advanced-React/Vite";
+import ErrorExample from "./Lessons/Advanced-React/01-useState/errorExample";
 
 const App = () => {
   return (
     <div className="container">
-      <h2>Advanced React</h2>
+      <ErrorExample />
     </div>
   );
 };
