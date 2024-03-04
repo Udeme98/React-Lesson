@@ -17,11 +17,33 @@ const UseStateIntro = () => {
         <li>We use array destructuring to get the values from useState</li>
       </ul>
       <br />
+
       <h3>Example</h3>
       <p>You clicked the button {count} times</p>
       <button onClick={() => setCount((prev) => prev + 1)} className="btn">
         Click Me!
       </button>
+      <br />
+      <br />
+
+      <h3>Intial Render and Re-renders</h3>
+      <p>
+        In a React application, the initial render is the first time that the
+        component tree is rendered to the DOM. This is also known as 'mounting'
+        the components.
+      </p>
+      <p>
+        Re-render, on the other hand, happen when the component's state or props
+        change, and the component needs to be updated in the DOM to reflect
+        these changes. React uses a virtual DOM to optimize the process of
+        updating the actual DOM, so that only the necessary changes are made.
+      </p>
+
+      <h3>Ways to trigger Re-render of React Component:</h3>
+      <ul>
+        <li>1. By changing the component's state or prop.</li>
+        <li>2. When the parent component re-renders.</li>
+      </ul>
     </>
   );
 };
