@@ -1,9 +1,9 @@
-import UseStateIntro from "./Lessons/Advanced-React/useState/useStateIntro";
+import UseStateArray from "./Lessons/Advanced-React/useState/useStateArray";
 
 const App = () => {
   return (
     <div className="container">
-      <UseStateIntro />
+      <UseStateArray />
     </div>
   );
 };
