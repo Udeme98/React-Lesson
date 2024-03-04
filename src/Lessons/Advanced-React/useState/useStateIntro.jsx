@@ -44,6 +44,16 @@ const UseStateIntro = () => {
         <li>1. By changing the component's state or prop.</li>
         <li>2. When the parent component re-renders.</li>
       </ul>
+      <br />
+      <br />
+      <h3>Hook Rules</h3>
+      <ul>
+        <li>- Starts with 'use' (both -react and custom hooks).</li>
+        <li>- Components must be uppercase.</li>
+        <li>- Invoke inside functions/component body.</li>
+        <li>- Don't call hooks conditionally.</li>
+        <li>- Set functions don't update state immediately</li>
+      </ul>
     </>
   );
 };
