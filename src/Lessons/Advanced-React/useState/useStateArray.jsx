@@ -12,10 +12,8 @@ import { useState } from "react";
 const UseStateArray = () => {
   const [people, setPeople] = useState(data);
 
-  const removeItem = (id) => {
-    const rem = people.filter((person) => person.id !== id);
-    setPeople(rem);
-  };
+  const removeItem = (id) =>
+    setPeople(people.filter((person) => person.id !== id));
   const clearAll = () => setPeople([]);
 
   const showPeople = people.map((person) => {
