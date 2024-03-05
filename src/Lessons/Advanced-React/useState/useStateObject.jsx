@@ -10,21 +10,36 @@
 import { useState } from "react";
 
 const UseStateObject = () => {
-  const [name, setName] = useState("Udeme");
-  const [age, setAge] = useState(25);
-  const [hobby, setHobby] = useState("Listening to great music");
+  //   const [name, setName] = useState("Udeme");
+  //   const [age, setAge] = useState(25);
+  //   const [hobby, setHobby] = useState("Listening to great music");
+
+  //   const changePerson = () => {
+  //     setName("Itoro");
+  //     setAge(24);
+  //     setHobby("Watching a Movie");
+  //   };
+
+  //using object
+  const [person, setPerson] = useState({
+    name: "Udeme",
+    age: 24,
+    hobby: "Listening to great music",
+  });
 
   const changePerson = () => {
-    setName("Itoro");
-    setAge(24);
-    setHobby("Watching a Movie");
+    setPerson({ name: "Itoro", age: 24, hobby: "Watching a Movie" });
+    setPerson({ ...person, name: "Goodness" }); // overriding a particular value
+    // setName("Itoro");
+    // setAge(24);
+    // setHobby("Watching a Movie");
   };
 
   return (
     <>
-      <h2>Name: {name}</h2>
-      <h3>Age: {age}</h3>
-      <h4>Enjoys: {hobby}</h4>
+      <h2>Name: {person.name}</h2>
+      <h3>Age: {person.age}</h3>
+      <h4>Enjoys: {person.hobby}</h4>
 
       <button
         className="btn"
