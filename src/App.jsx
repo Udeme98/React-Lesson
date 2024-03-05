@@ -1,9 +1,9 @@
-import UseStateObject from "./Lessons/Advanced-React/useState/useStateObject";
+import UseStateGotcha from "./Lessons/Advanced-React/useState/useStateGotcha";
 
 const App = () => {
   return (
     <div className="container">
-      <UseStateObject />
+      <UseStateGotcha />
     </div>
   );
 };
