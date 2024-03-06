@@ -1,9 +1,9 @@
-import UseStateGotcha from "./Lessons/Advanced-React/useState/useStateGotcha";
+import UseEffectExample from "./Lessons/Advanced-React/useEffect/useEffectExample";
 
 const App = () => {
   return (
     <div className="container">
-      <UseStateGotcha />
+      <UseEffectExample />
     </div>
   );
 };
