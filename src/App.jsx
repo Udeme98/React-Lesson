@@ -1,9 +1,9 @@
-import UseEffectExample from "./Lessons/Advanced-React/useEffect/useEffectExample";
+import UseEffectBasics from "./Lessons/Advanced-React/useEffect/useEffectBasics";
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectExample />
+      <UseEffectBasics />
     </div>
   );
 };
