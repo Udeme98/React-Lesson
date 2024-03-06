@@ -1,9 +1,9 @@
-import UseEffectChallenge from "./Lessons/Advanced-React/useEffect/useEffectChallenge";
+import MultipleReturns from "./Lessons/Advanced-React/conditionalRendering/MultipleReturns";
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectChallenge />
+      <MultipleReturns />
     </div>
   );
 };
