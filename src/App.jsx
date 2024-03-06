@@ -1,9 +1,9 @@
-import UseEffectMultiple from "./Lessons/Advanced-React/useEffect/useEffectMultiple";
+import UseEffectChallenge from "./Lessons/Advanced-React/useEffect/useEffectChallenge";
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectMultiple />
+      <UseEffectChallenge />
     </div>
   );
 };

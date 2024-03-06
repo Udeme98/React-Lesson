@@ -1,7 +1,7 @@
 //aim - set up a title
 
-import BookCard from "../Lessons/React-Fundamentals/Es6 Modules/BookCard";
-import { books } from "../Lessons/React-Fundamentals/Es6 Modules/books";
+import BookCard from "../Es6 Modules/BookCard";
+import { books } from "../Es6 Modules/books";
 
 const TitleClgs = () => {
   return (
