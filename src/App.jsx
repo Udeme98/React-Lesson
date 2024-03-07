@@ -1,9 +1,9 @@
-import MultipleReturnsFetchData from "./Lessons/Advanced-React/conditionalRendering/MultipleReturnsFetchData";
+import ShortCircuit from "./Lessons/Advanced-React/conditionalRendering/ShortCircuit";
 
 const App = () => {
   return (
     <div className="container">
-      <MultipleReturnsFetchData />
+      <ShortCircuit />
     </div>
   );
 };
