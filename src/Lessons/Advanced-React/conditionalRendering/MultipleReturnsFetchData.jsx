@@ -40,6 +40,8 @@ const MultipleReturnsFetchData = () => {
     return <h3>There was an error...</h3>;
   }
 
+  const { avatar_url, name, company, bio } = user;
+
   return (
     <div>
       {/* <h2>Multiple Returns Fetch Data</h2>
@@ -51,13 +53,13 @@ const MultipleReturnsFetchData = () => {
         <li>iii. success - received data (display data)</li>
       </ul> */}
       <img
-        src={user.avatar_url}
-        alt={user.name}
+        src={avatar_url}
+        alt={name}
         style={{ borderRadius: "25px", width: "150px" }}
       />
-      <h2>{user.name}</h2>
-      <h4>Works at {user.company}</h4>
-      <p>{user.bio}</p>
+      <h2>{name}</h2>
+      <h4>Works at {company}</h4>
+      <p>{bio}</p>
     </div>
   );
 };
