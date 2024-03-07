@@ -1,9 +1,9 @@
-import ShortCircuitExample from "./Lessons/Advanced-React/conditionalRendering/ShortCircuitExample";
+import TernaryOperator from "./Lessons/Advanced-React/conditionalRendering/TernaryOperator";
 
 const App = () => {
   return (
     <div className="container">
-      <ShortCircuitExample />
+      <TernaryOperator />
     </div>
   );
 };
