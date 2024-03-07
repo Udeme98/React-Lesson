@@ -1,9 +1,9 @@
-import TernaryOperator from "./Lessons/Advanced-React/conditionalRendering/TernaryOperator";
+import ToggleChallenge from "./Lessons/Advanced-React/conditionalRendering/ToggleChallenge";
 
 const App = () => {
   return (
     <div className="container">
-      <TernaryOperator />
+      <ToggleChallenge />
     </div>
   );
 };
