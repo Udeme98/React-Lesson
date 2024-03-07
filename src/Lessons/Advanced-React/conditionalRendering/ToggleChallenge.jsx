@@ -14,7 +14,8 @@ const ToggleChallenge = () => {
     <div>
       <h2>Toggle Challenge</h2>
 
-      <h3>{isShown ? "Hello World is Showing..!" : "False"}</h3>
+      {/* <h3>{isShown ? "Hello World is Showing..!" : " "}</h3> */}
+      <h3>{isShown && "Hello World is Showing..!"}</h3>
       <button className="btn" onClick={() => setIsShown(!isShown)}>
         Toggle
       </button>
