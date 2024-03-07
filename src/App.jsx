@@ -1,9 +1,9 @@
-import MultipleReturns from "./Lessons/Advanced-React/conditionalRendering/MultipleReturns";
+import MultipleReturnsFetchData from "./Lessons/Advanced-React/conditionalRendering/MultipleReturnsFetchData";
 
 const App = () => {
   return (
     <div className="container">
-      <MultipleReturns />
+      <MultipleReturnsFetchData />
     </div>
   );
 };
