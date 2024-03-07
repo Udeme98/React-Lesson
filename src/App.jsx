@@ -1,9 +1,9 @@
-import ShortCircuitOverview from "./Lessons/Advanced-React/conditionalRendering/ShortCircuitOverview";
+import ShortCircuitExample from "./Lessons/Advanced-React/conditionalRendering/ShortCircuitExample";
 
 const App = () => {
   return (
     <div className="container">
-      <ShortCircuitOverview />
+      <ShortCircuitExample />
     </div>
   );
 };
