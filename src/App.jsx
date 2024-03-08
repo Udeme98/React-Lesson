@@ -1,13 +1,11 @@
-import Example from "./Lessons/Advanced-React/4-project-structure/Example";
-import {
-  Home,
-  About,
-} from "./Lessons/Advanced-React/4-project-structure/Pages";
+import List from "./Lessons/Advanced-React/5-leverage-javascript/List";
+import Person from "./Lessons/Advanced-React/5-leverage-javascript/Person";
 
 const App = () => {
   return (
     <div className="container">
-      <Example />
+      <List />
+      <Person />
     </div>
   );
 };
