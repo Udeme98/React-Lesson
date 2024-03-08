@@ -1,9 +1,9 @@
-import UserChallenge from "./Lessons/Advanced-React/conditionalRendering/UserChallenge";
+import UseEffectCleanup from "./Lessons/Advanced-React/useEffect/useEffectCleanup";
 
 const App = () => {
   return (
     <div className="container">
-      <UserChallenge />
+      <UseEffectCleanup />
     </div>
   );
 };
