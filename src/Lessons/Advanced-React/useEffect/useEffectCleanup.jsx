@@ -22,8 +22,19 @@ const UseEffectCleanup = () => {
 
 const SecondComponent = () => {
   useEffect(() => {
-    console.log("hello world");
+    //console.log("hello world");
+    // const intId = setInterval(() => {
+    //   console.log("hello from interval");
+    // }, 1000);
+    // return () => {
+    //   clearInterval(intId);
+    // };
+
+    const someFunc = () => {
+      //some logic
+    };
+    window.addEventListener("scroll", someFunc);
+    return () => window.removeEventListener("scroll", someFunc);
   }, []);
-  return <h4>Hello World</h4>;
 };
 export default UseEffectCleanup;
