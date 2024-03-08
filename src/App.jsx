@@ -1,9 +1,9 @@
-import ToggleChallenge from "./Lessons/Advanced-React/conditionalRendering/ToggleChallenge";
+import UserChallenge from "./Lessons/Advanced-React/conditionalRendering/UserChallenge";
 
 const App = () => {
   return (
     <div className="container">
-      <ToggleChallenge />
+      <UserChallenge />
     </div>
   );
 };
