@@ -9,7 +9,39 @@
 // h4 with 'hello there, user name' and logout button
 // h4 with 'please login' and login button
 
+import { useState } from "react";
+
 const UserChallenge = () => {
-  return <div>User Challenge</div>;
+  const [user, setUser] = useState(null);
+
+  const login = () => {
+    setUser({ name: "sam" });
+  };
+
+  const logout = () => {
+    setUser(null);
+  };
+
+  return (
+    <div>
+      <h2>User Challenge</h2>
+      {user ? (
+        <div>
+          <h4>Hello there, {user.name}!</h4>
+          <button className="btn" onClick={logout}>
+            Logout
+          </button>
+        </div>
+      ) : (
+        <div>
+          <h4>please login</h4>
+          <button className="btn" onClick={login}>
+            Login
+          </button>
+        </div>
+      )}
+    </div>
+  );
 };
+
 export default UserChallenge;
