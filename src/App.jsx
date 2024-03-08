@@ -1,9 +1,13 @@
-import UseEffectCleanup from "./Lessons/Advanced-React/useEffect/useEffectCleanup";
+import {
+  Home,
+  About,
+} from "./Lessons/Advanced-React/4-project-structure/Pages";
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectCleanup />
+      <Home />
+      <About />
     </div>
   );
 };
