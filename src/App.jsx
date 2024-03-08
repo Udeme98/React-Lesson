@@ -1,3 +1,4 @@
+import Example from "./Lessons/Advanced-React/4-project-structure/Example";
 import {
   Home,
   About,
@@ -6,8 +7,7 @@ import {
 const App = () => {
   return (
     <div className="container">
-      <Home />
-      <About />
+      <Example />
     </div>
   );
 };
