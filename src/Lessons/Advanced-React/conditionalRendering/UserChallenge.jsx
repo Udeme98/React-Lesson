@@ -15,31 +15,39 @@ const UserChallenge = () => {
   const [user, setUser] = useState(null);
 
   const login = () => {
-    setUser({ name: "sam" });
+    setUser({ user: "sam" });
   };
 
   const logout = () => {
     setUser(null);
   };
 
+  const Login = ({ name }) => {
+    return (
+      <div>
+        <h4>Hello there, {name.user}!</h4>
+        <button className="btn" onClick={logout}>
+          Logout
+        </button>
+      </div>
+    );
+  };
+
+  const Logout = () => {
+    return (
+      <div>
+        <h4>please login</h4>
+        <button className="btn" onClick={login}>
+          Login
+        </button>
+      </div>
+    );
+  };
+
   return (
     <div>
       <h2>User Challenge</h2>
-      {user ? (
-        <div>
-          <h4>Hello there, {user.name}!</h4>
-          <button className="btn" onClick={logout}>
-            Logout
-          </button>
-        </div>
-      ) : (
-        <div>
-          <h4>please login</h4>
-          <button className="btn" onClick={login}>
-            Login
-          </button>
-        </div>
-      )}
+      {user ? <Login name={user} /> : <Logout />}
     </div>
   );
 };
