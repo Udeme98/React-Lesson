@@ -1,9 +1,9 @@
-import ControlledInputs from "./Lessons/Advanced-React/6-forms/ControlledInputs";
+import UserChallenge from "./Lessons/Advanced-React/6-forms/UserChallenge";
 
 const App = () => {
   return (
     <div className="container">
-      <ControlledInputs />
+      <UserChallenge />
     </div>
   );
 };
