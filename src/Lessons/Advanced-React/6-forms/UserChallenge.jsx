@@ -26,6 +26,11 @@ const UserChallenge = () => {
     setName(""); /*clears the input field */
   };
 
+  const remove = (id) => {
+    const filId = user.filter((user) => user.id !== id);
+    setUser(filId);
+  };
+
   return (
     <div>
       <form className="form" onSubmit={handleSubmit}>
@@ -50,7 +55,14 @@ const UserChallenge = () => {
       </form>
       <h3>users</h3>
       {user.map((user) => {
-        return <h4 key={user.id}>{user.name}</h4>;
+        return (
+          <div key={user.id}>
+            <h4>{user.name}</h4>
+            <button className="btn" onClick={() => remove(user.id)}>
+              remove
+            </button>
+          </div>
+        );
       })}
     </div>
   );
