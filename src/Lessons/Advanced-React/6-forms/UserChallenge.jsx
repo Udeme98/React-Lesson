@@ -15,26 +15,40 @@ const UserChallenge = () => {
   const [name, setName] = useState("");
   const [user, setUser] = useState(data);
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("button submit");
+    if (!name) return;
+
+    const fakeId = Date.now();
+    const updatedUsers = { id: fakeId, name: name };
+    setUser([...user, updatedUsers]);
+
+    setName(""); /*clears the input field */
   };
 
   return (
     <div>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <h4>Add User</h4>
         <div className="form-row">
           <label htmlFor="name" className="form-label">
             name
           </label>
-          <input type="text" className="form-input" id="name" />
+          <input
+            type="text"
+            className="form-input"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
         </div>
 
-        <button type="submit" onClick={onSubmit} className="btn btn-block">
+        <button type="submit" className="btn btn-block">
           submit
         </button>
       </form>
+      <h3>users</h3>
       {user.map((user) => {
         return <h4 key={user.id}>{user.name}</h4>;
       })}
