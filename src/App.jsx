@@ -1,11 +1,9 @@
-import List from "./Lessons/Advanced-React/5-leverage-javascript/List";
-import Person from "./Lessons/Advanced-React/5-leverage-javascript/Person";
+import ControlledInputs from "./Lessons/Advanced-React/6-forms/ControlledInputs";
 
 const App = () => {
   return (
     <div className="container">
-      <List />
-      <Person />
+      <ControlledInputs />
     </div>
   );
 };
