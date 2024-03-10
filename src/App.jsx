@@ -1,9 +1,9 @@
-import OtherInputs from "./Lessons/Advanced-React/6-forms/OtherInputs";
+import FormDataAPI from "./Lessons/Advanced-React/6-forms/FormDataAPI";
 
 const App = () => {
   return (
     <div className="container">
-      <OtherInputs />
+      <FormDataAPI />
     </div>
   );
 };
