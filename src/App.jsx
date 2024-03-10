@@ -1,9 +1,9 @@
-import MultipleInputs from "./Lessons/Advanced-React/6-forms/MultipleInputs";
+import OtherInputs from "./Lessons/Advanced-React/6-forms/OtherInputs";
 
 const App = () => {
   return (
     <div className="container">
-      <MultipleInputs />
+      <OtherInputs />
     </div>
   );
 };
