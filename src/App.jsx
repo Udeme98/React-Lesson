@@ -1,9 +1,9 @@
-import UserChallenge from "./Lessons/Advanced-React/6-forms/UserChallenge";
+import MultipleInputs from "./Lessons/Advanced-React/6-forms/MultipleInputs";
 
 const App = () => {
   return (
     <div className="container">
-      <UserChallenge />
+      <MultipleInputs />
     </div>
   );
 };
