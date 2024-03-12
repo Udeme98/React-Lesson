@@ -1,9 +1,9 @@
-import ToggleExample from "./Lessons/Advanced-React/8-custom-hooks/ToggleExample";
+import FetchData from "./Lessons/Advanced-React/8-custom-hooks/FetchData";
 
 const App = () => {
   return (
     <div className="container">
-      <ToggleExample />
+      <FetchData />
     </div>
   );
 };
