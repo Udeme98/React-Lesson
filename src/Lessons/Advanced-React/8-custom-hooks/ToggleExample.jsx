@@ -1,7 +1,7 @@
-import { useState } from "react";
+import useToggle from "./useToggle";
 
 const ToggleExample = () => {
-  const [show, setShow] = useState(false);
+  const { show, toggle } = useToggle(false);
   return (
     <div>
       <h2>Custom Hooks</h2>
@@ -13,7 +13,7 @@ const ToggleExample = () => {
       <br />
 
       <h4>Toggle custom hook</h4>
-      <button onClick={() => setShow((prev) => !prev)} className="btn">
+      <button onClick={() => toggle((prev) => !prev)} className="btn">
         Toggle
       </button>
       {show && <h4>Some stuff</h4>}
