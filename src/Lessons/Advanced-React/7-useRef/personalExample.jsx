@@ -2,16 +2,20 @@ import { useEffect, useRef, useState } from "react";
 
 const PersonalExample = () => {
   const [name, setName] = useState("");
-  const renderCount = useRef(1);
+  //   const renderCount = useRef(1);
   const inputFocus = useRef(null);
 
-  useEffect(() => {
-    renderCount.current = renderCount.current + 1;
-  });
+  //   useEffect(() => {
+  //     renderCount.current = renderCount.current + 1;
+  //   });
 
-  useEffect(() => {
+  //   useEffect(() => {
+  //     inputFocus.current.focus();
+  //   });
+
+  const focus = () => {
     inputFocus.current.focus();
-  });
+  };
 
   return (
     <div>
@@ -29,7 +33,10 @@ const PersonalExample = () => {
           ref={inputFocus}
         />
       </form>
-      <h4>I rendered {renderCount.current} times..</h4>
+      <button className="btn" onClick={focus}>
+        Focus
+      </button>
+      {/* <h4>I rendered {renderCount.current} times..</h4> */}
     </div>
   );
 };
