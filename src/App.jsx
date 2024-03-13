@@ -1,9 +1,9 @@
-import FetchData from "./Lessons/Advanced-React/8-custom-hooks/FetchData";
+import PersonalExample from "./Lessons/Advanced-React/7-useRef/personalExample";
 
 const App = () => {
   return (
     <div className="container">
-      <FetchData />
+      <PersonalExample />
     </div>
   );
 };
