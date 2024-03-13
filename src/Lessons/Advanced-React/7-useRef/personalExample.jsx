@@ -3,9 +3,14 @@ import { useEffect, useRef, useState } from "react";
 const PersonalExample = () => {
   const [name, setName] = useState("");
   const renderCount = useRef(1);
+  const inputFocus = useRef(null);
 
   useEffect(() => {
     renderCount.current = renderCount.current + 1;
+  });
+
+  useEffect(() => {
+    inputFocus.current.focus();
   });
 
   return (
@@ -21,6 +26,7 @@ const PersonalExample = () => {
           className="form-input"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          ref={inputFocus}
         />
       </form>
       <h4>I rendered {renderCount.current} times..</h4>
