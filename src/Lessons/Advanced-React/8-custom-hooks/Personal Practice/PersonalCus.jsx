@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { usePersonalCus2 } from "./usePersonalCus2";
 
 const PersonalCus = () => {
-  const [show, setShow] = useState(false);
+  const [show, toggle] = usePersonalCus2(false);
 
   return (
     <div>
       <h2>Personal Cus</h2>
-      {show && <h4>Hello world</h4>}
 
-      <button className="btn" onClick={() => setShow(!show)}>
+      <button className="btn" onClick={toggle}>
         Toggle
       </button>
+      {show && <h4>Hello world</h4>}
     </div>
   );
 };
