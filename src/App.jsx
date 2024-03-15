@@ -1,9 +1,9 @@
-import PersonalExample from "./Lessons/Advanced-React/7-useRef/personalExample";
+import PersonalCus from "./Lessons/Advanced-React/8-custom-hooks/Personal Practice/PersonalCus";
 
 const App = () => {
   return (
     <div className="container">
-      <PersonalExample />
+      <PersonalCus />
     </div>
   );
 };
