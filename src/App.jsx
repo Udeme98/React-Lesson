@@ -1,9 +1,9 @@
-import FetchData from "./Lessons/Advanced-React/8-custom-hooks/FetchData";
+import Navbar from "./Lessons/Advanced-React/9-Context-API/Navbar";
 
 const App = () => {
   return (
-    <div className="container">
-      <FetchData />
+    <div className>
+      <Navbar />
     </div>
   );
 };
