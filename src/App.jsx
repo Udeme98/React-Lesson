@@ -1,9 +1,9 @@
-import PersonalCus from "./Lessons/Advanced-React/8-custom-hooks/Personal Practice/PersonalCus";
+import FetchData from "./Lessons/Advanced-React/8-custom-hooks/FetchData";
 
 const App = () => {
   return (
     <div className="container">
-      <PersonalCus />
+      <FetchData />
     </div>
   );
 };
