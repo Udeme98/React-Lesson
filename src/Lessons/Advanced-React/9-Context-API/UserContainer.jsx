@@ -1,11 +1,16 @@
 const UserContainer = ({ user, logout }) => {
   return (
-    <div>
-      <h3>Context API</h3>
-      <h4>{user.name}</h4>
-      <button className="btn" onClick={logout}>
-        Toggle
-      </button>
+    <div className="user-container">
+      {user ? (
+        <>
+          <p>Hello there, {user?.name}</p>
+          <button className="btn" onClick={logout}>
+            logout
+          </button>
+        </>
+      ) : (
+        <p>Please Login</p>
+      )}
     </div>
   );
 };

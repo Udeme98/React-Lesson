@@ -3,15 +3,15 @@ import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   const [user, setUser] = useState({ name: "Joe" });
-
   const logout = () => {
-    setUser({ ...user, name: null });
+    setUser(null);
   };
 
   return (
-    <div>
+    <nav className="navbar">
+      <h5>Context API</h5>
       <NavLinks user={user} logout={logout} />
-    </div>
+    </nav>
   );
 };
 export default Navbar;
