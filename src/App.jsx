@@ -1,4 +1,4 @@
-import Navbar from "./Lessons/Advanced-React/9-Context-API/Prop drilling/Navbar";
+import Navbar from "./Lessons/Advanced-React/9-Context-API/Context/Navbar";
 
 const App = () => {
   return (
