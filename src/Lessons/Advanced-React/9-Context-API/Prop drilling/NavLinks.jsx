@@ -1,4 +1,4 @@
-import UserContainer from "./UserContainer";
+import UserContainer from "../UserContainer";
 
 const NavLinks = ({ user, logout }) => {
   return (
