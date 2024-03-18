@@ -1,4 +1,5 @@
-const UserContainer = ({ user, logout }) => {
+const UserContainer = () => {
+  return "Hello World";
   return (
     <div className="user-container">
       {user ? (
