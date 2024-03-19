@@ -1,9 +1,9 @@
-import Navbar from "./Lessons/Advanced-React/9-Context-API/Context/Navbar";
+import UseReducer from "./Lessons/Advanced-React/10-useReducer/UseReducer";
 
 const App = () => {
   return (
-    <div className>
-      <Navbar />
+    <div className="container">
+      <UseReducer />
     </div>
   );
 };
