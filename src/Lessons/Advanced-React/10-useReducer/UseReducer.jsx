@@ -1,6 +1,11 @@
 // overview:
 // useReducer hook acts as a light version of Redux(State Management Library)
 
+//task:
+// create func that set's people back to data array
+// create another button similar to clear for reset
+// use conditional rendering to toggle between the buttons, depending on people value
+
 import { useState } from "react";
 import { data } from "../../../data";
 
@@ -11,6 +16,7 @@ const UseReducer = () => {
   };
 
   const clearList = () => setPeople([]);
+  const reset = () => setPeople(data);
 
   const [people, setPeople] = useState(data);
   return (
@@ -27,9 +33,16 @@ const UseReducer = () => {
           </div>
         );
       })}
-      <button className="btn" onClick={clearList}>
-        Clear All
-      </button>
+      <br />
+      {people === data ? (
+        <button className="btn" onClick={clearList}>
+          Clear All
+        </button>
+      ) : (
+        <button className="btn" onClick={reset}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };
