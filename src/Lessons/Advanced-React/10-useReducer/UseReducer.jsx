@@ -27,14 +27,12 @@ const UseReducer = () => {
         return (
           <div key={id} className="item">
             <h4>{name}</h4>
-            <button className="btn" onClick={() => removeItem(id)}>
-              remove
-            </button>
+            <button onClick={() => removeItem(id)}>remove</button>
           </div>
         );
       })}
       <br />
-      {people === data ? (
+      {people.length > 0 ? (
         <button className="btn" onClick={clearList}>
           Clear All
         </button>
