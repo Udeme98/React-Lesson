@@ -11,11 +11,14 @@ import { data } from "../../../data";
 
 const UseReducer = () => {
   const removeItem = (id) => {
-    let newPeople = people.filter((person) => person.id !== id);
-    setPeople(newPeople);
+    // let newPeople = people.filter((person) => person.id !== id);
+    // setPeople(newPeople);
   };
 
-  const clearList = () => setPeople([]);
+  const clearList = () => {
+    // setPeople([]);
+  };
+
   const reset = () => setPeople(data);
 
   const [people, setPeople] = useState(data);
