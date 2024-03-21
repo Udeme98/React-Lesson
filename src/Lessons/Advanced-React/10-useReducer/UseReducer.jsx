@@ -9,13 +9,15 @@
 import { useReducer, useState } from "react";
 import { data } from "../../../data";
 
-const defaultValue = () => {
-  people: data;
+const defaultState = {
+  people: data,
 };
+
 const reducer = () => {};
 
 const UseReducer = () => {
-  const [state, dispatch] = useReducer(reducer, defaultValue);
+  const [state, dispatch] = useReducer(reducer, defaultState);
+  console.log(state);
 
   const removeItem = (id) => {
     // let newPeople = people.filter((person) => person.id !== id);
@@ -26,13 +28,14 @@ const UseReducer = () => {
     // setPeople([]);
   };
 
-  const reset = () => setPeople(data);
+  const reset = () => {
+    // setPeople(data);
+  };
 
-  const [people, setPeople] = useState(data);
   return (
     <div>
       <h3>UseReducer</h3>
-      {people.map((person) => {
+      {state.people.map((person) => {
         const { id, name } = person;
         return (
           <div key={id} className="item">
@@ -42,7 +45,7 @@ const UseReducer = () => {
         );
       })}
       <br />
-      {people.length > 0 ? (
+      {state.people.length > 0 ? (
         <button className="btn" onClick={clearList}>
           Clear All
         </button>
