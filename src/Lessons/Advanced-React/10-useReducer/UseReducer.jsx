@@ -6,10 +6,17 @@
 // create another button similar to clear for reset
 // use conditional rendering to toggle between the buttons, depending on people value
 
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import { data } from "../../../data";
 
+const defaultValue = () => {
+  people: data;
+};
+const reducer = () => {};
+
 const UseReducer = () => {
+  const [state, dispatch] = useReducer(reducer, defaultValue);
+
   const removeItem = (id) => {
     // let newPeople = people.filter((person) => person.id !== id);
     // setPeople(newPeople);
