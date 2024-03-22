@@ -6,18 +6,22 @@
 // create another button similar to clear for reset
 // use conditional rendering to toggle between the buttons, depending on people value
 
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 import { data } from "../../../data";
 
 const defaultState = {
   people: data,
 };
 
+const CLEAR_LIST = "CLEAR_LIST";
+const RESET_LIST = "RESET_LIST";
+const REMOVE_ITEM = "REMOVE_ITEM";
+
 const reducer = (state, action) => {
-  if (action.type === "CLEAR_LIST") {
+  if (action.type === CLEAR_LIST) {
     return { ...state, people: [] };
   }
-  if (action.type === "RESET_LIST") {
+  if (action.type === RESET_LIST) {
     return { ...state, people: data };
   }
 };
@@ -32,12 +36,12 @@ const UseReducer = () => {
   };
 
   const clearList = () => {
-    dispatch({ type: "CLEAR_LIST" });
+    dispatch({ type: CLEAR_LIST });
     // setPeople([]);
   };
 
   const reset = () => {
-    dispatch({ type: "RESET_LIST" });
+    dispatch({ type: RESET_LIST });
     // setPeople(data);
   };
 
