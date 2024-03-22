@@ -21,9 +21,10 @@ const reducer = (state, action) => {
   if (action.type === CLEAR_LIST) {
     return { ...state, people: [] };
   }
-  if (action.type === RESET_LIST) {
-    return { ...state, people: data };
-  }
+  //   if (action.type === RESET_LIST) {
+  //     return { ...state, people: data };
+  //   }
+  throw new Error(`No matching '${action.type}' - action type`);
 };
 
 const UseReducer = () => {
@@ -41,7 +42,8 @@ const UseReducer = () => {
   };
 
   const reset = () => {
-    dispatch({ type: RESET_LIST });
+    // dispatch({ type: RESET_LIST });
+    dispatch({ type: "RESET_IST" });
     // setPeople(data);
   };
 
