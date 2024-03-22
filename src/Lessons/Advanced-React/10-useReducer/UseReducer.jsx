@@ -17,6 +17,9 @@ const reducer = (state, action) => {
   if (action.type === "CLEAR_LIST") {
     return { ...state, people: [] };
   }
+  if (action.type === "RESET_LIST") {
+    return { ...state, people: data };
+  }
 };
 
 const UseReducer = () => {
@@ -34,6 +37,7 @@ const UseReducer = () => {
   };
 
   const reset = () => {
+    dispatch({ type: "RESET_LIST" });
     // setPeople(data);
   };
 
