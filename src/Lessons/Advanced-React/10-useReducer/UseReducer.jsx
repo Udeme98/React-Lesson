@@ -32,6 +32,7 @@ const UseReducer = () => {
   console.log(state);
 
   const removeItem = (id) => {
+    dispatch({ type: REMOVE_ITEM });
     // let newPeople = people.filter((person) => person.id !== id);
     // setPeople(newPeople);
   };
