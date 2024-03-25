@@ -4,6 +4,7 @@
 // An alternative to useState but not a replacement
 // useReducer is related to reducer functions
 // useReducer accepts two parameters (reducer & initialState)
+// reducer function accepts two parameters (currentState, action)
 
 //task:
 // create func that set's people back to data array
