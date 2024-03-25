@@ -1,5 +1,6 @@
 // overview:
 // useReducer hook acts as a light version of Redux(State Management Library)
+// Basically a hook that is used for state management
 
 //task:
 // create func that set's people back to data array
