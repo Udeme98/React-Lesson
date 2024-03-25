@@ -2,6 +2,8 @@
 // useReducer hook acts as a light version of Redux(State Management Library)
 // Basically a hook that is used for state management
 // An alternative to useState but not a replacement
+// useReducer is related to reducer functions
+// useReducer accepts two parameters (reducer & initialState)
 
 //task:
 // create func that set's people back to data array
