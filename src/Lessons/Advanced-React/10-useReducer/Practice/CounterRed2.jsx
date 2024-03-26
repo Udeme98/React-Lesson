@@ -7,9 +7,11 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case "increase":
-      return { firstCounter: state.firstCounter + 1 };
+      return { firstCounter: state.firstCounter + action.value };
     case "decrease":
-      return { firstCounter: state.firstCounter - 1 };
+      return { firstCounter: state.firstCounter - action.value };
+    case "increase5":
+      return { firstCounter: state.firstCounter + action.value };
     case "reset":
       return initialState;
     default:
@@ -26,16 +28,23 @@ const CounterRed2 = () => {
       <button
         className="btn"
         style={{ margin: "2px" }}
-        onClick={() => dispatch({ type: "increase" })}
+        onClick={() => dispatch({ type: "increase", value: 1 })}
       >
         Increase
       </button>
       <button
         className="btn"
         style={{ margin: "2px" }}
-        onClick={() => dispatch({ type: "decrease" })}
+        onClick={() => dispatch({ type: "decrease", value: 1 })}
       >
         Decrease
+      </button>
+      <button
+        className="btn"
+        style={{ margin: "2px" }}
+        onClick={() => dispatch({ type: "increase5", value: 5 })}
+      >
+        Increase 5
       </button>
       <button
         className="btn"
