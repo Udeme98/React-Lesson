@@ -1,9 +1,9 @@
-import CounterRed2 from "./Lessons/Advanced-React/10-useReducer/Practice/CounterRed2";
+import CounterRed3 from "./Lessons/Advanced-React/10-useReducer/Practice/CounterRed3";
 
 const App = () => {
   return (
     <div className="container">
-      <CounterRed2 />
+      <CounterRed3 />
     </div>
   );
 };
