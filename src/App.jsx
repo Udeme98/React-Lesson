@@ -1,9 +1,9 @@
-import CounterRed3 from "./Lessons/Advanced-React/10-useReducer/Practice/CounterRed3";
+import CounterText from "./Lessons/Advanced-React/10-useReducer/Practice/CounterTexxt";
 
 const App = () => {
   return (
     <div className="container">
-      <CounterRed3 />
+      <CounterText />
     </div>
   );
 };
