@@ -1,9 +1,9 @@
-import CounterText from "./Lessons/Advanced-React/10-useReducer/Practice/CounterTexxt";
+import DataFetchRed from "./Lessons/Advanced-React/10-useReducer/Practice/DataFetchRed";
 
 const App = () => {
   return (
     <div className="container">
-      <CounterText />
+      <DataFetchRed />
     </div>
   );
 };
