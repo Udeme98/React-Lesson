@@ -1,9 +1,9 @@
-import DataFetchRed from "./Lessons/Advanced-React/10-useReducer/Practice/DataFetchRed";
+import LowerState from "./Lessons/Advanced-React/11-performance/01-lower-state";
 
 const App = () => {
   return (
     <div className="container">
-      <DataFetchRed />
+      <LowerState />
     </div>
   );
 };
