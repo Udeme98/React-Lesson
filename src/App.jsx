@@ -1,9 +1,8 @@
-import LowerStateChallenge from "./Lessons/Advanced-React/11-performance/02-lower-state-challenge";
-
+import LowerState from "./Lessons/Advanced-React/11-performance/03-hooks";
 const App = () => {
   return (
     <div className="container">
-      <LowerStateChallenge />
+      <LowerState />
     </div>
   );
 };
