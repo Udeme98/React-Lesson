@@ -1,3 +1,5 @@
+// React.memo(Component) - returns memoized component
+
 import { useState } from "react";
 import { data } from "../../../../data";
 import List from "./List";
