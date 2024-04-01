@@ -1,8 +1,8 @@
-import LowerState from "./Lessons/Advanced-React/11-performance/03-hooks";
+import LatestReact from "./Lessons/Advanced-React/11-performance/04-react-18";
 const App = () => {
   return (
     <div className="container">
-      <LowerState />
+      <LatestReact />
     </div>
   );
 };
