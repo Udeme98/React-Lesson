@@ -12,7 +12,6 @@ const LatestReact = () => {
 
   const handleChange = (e) => {
     setText(e.target.value);
-
     //slow down CPU
     startTransition(() => {
       const newItems = Array.from({ length: 5000 }, (_, index) => {
@@ -27,39 +26,37 @@ const LatestReact = () => {
   };
 
   return (
-    <section>
-      <form className="form">
-        <input
-          type="text"
-          className="form-input"
-          value={text}
-          onChange={handleChange}
-        />
-      </form>
+    <Suspense fallback={<h4>Loading...</h4>}>
+      <section>
+        <form className="form">
+          <input
+            type="text"
+            className="form-input"
+            value={text}
+            onChange={handleChange}
+          />
+        </form>
 
-      <h4>Items Below</h4>
-      {isPending ? (
-        <h4>Loading...</h4>
-      ) : (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            marginTop: "2rem",
-          }}
-        >
-          {items}
-        </div>
-      )}
-      <button onClick={() => setShow(!show)} className="btn">
-        toggle
-      </button>
-      {show && (
-        <Suspense>
-          <SlowComponent fallback={<h4>Loading...</h4>} />
-        </Suspense>
-      )}
-    </section>
+        <h4>Items Below</h4>
+        {isPending ? (
+          <h4>Loading...</h4>
+        ) : (
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr 1fr",
+              marginTop: "2rem",
+            }}
+          >
+            {items}
+          </div>
+        )}
+        <button onClick={() => setShow(!show)} className="btn">
+          toggle
+        </button>
+        {show && <SlowComponent />}
+      </section>
+    </Suspense>
   );
 };
 export default LatestReact;
