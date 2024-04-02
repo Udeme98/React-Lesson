@@ -29,4 +29,4 @@ React - A Javascript library for building User Interfaces.
 
 1. Hooks - useState, useEffect, useRef, useContext, useReducer,etc.
 2. Forms - controlled/uncontrolled inputs, value, onChange, FormData API.
-3. Other - Context API, prop drilling, custom hooks, performance, etc.
+3. Other - Context API, prop drilling, custom hooks, performance, lazy loading, etc.
