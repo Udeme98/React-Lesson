@@ -1,4 +1,6 @@
-import { startTransition, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
+
+// Suspense API
 
 const LatestReact = () => {
   const [text, setText] = useState("");
